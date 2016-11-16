@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    
+    {{ content }}
+
+    {% include footer.html %}
+
+
+    <div class="modal">
+      <div class="modal-inner">
+        <a rel="modal:close">&times;</a>
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+    <div id="demo-modal" class="modal-hider">
+      <h3 class="modal-title">Request a Demo</h3>
+      <p>Add your information below and we'll contact you for a personalized demo.</p>
+      <form>
+        <label class="header-index-label">
+          <span class="header-index-icon">
+            <img src="/uploads/icon-name.svg">
+          </span>
+          <input class="header-index-input" type="text" placeholder="Full Name">
+        </label>
+        <label class="header-index-label">
+          <span class="header-index-icon">
+            <img src="/uploads/icon-email.svg">
+          </span>
+          <input class="header-index-input" type="text" placeholder="Email">
+        </label>
+        <label class="header-index-label">
+          <span class="header-index-icon">
+            <img src="/uploads/icon-company.svg">
+          </span>
+          <input class="header-index-input" type="text" placeholder="Company">
+        </label>
+        <label class="header-index-label">
+          <span class="header-index-icon">
+            <img class="icon-phone" src="/uploads/icon-phone.svg">
+          </span>
+          <input type="text" value="" name="PHONE" class="header-index-input" id="mce-PHONE" placeholder="Phone Number">
+        </label>
+        <button class="header-index-submit">
+          <span class="icon-video"></span>
+          <span>Get Demo</span>
+        </button>
+      </form>
+    </div>
+	
+	<!--<div id="thankyou-modal" class="modal-hider">
+		<div class="thankyou-msg">
+		  <h3 class="modal-title">Thank you!</h3>
+		  <p>One of our representatives will be in touch with you shortly.</p>
+		</div>
+    </div>-->
+
+    <div id="video-modal" class="modal-hider">
+      <div class="responsive-video">
+        <iframe width="560" height="315"  src="https://www.youtube.com/embed/x8hOqzBFkRk" allowfullscreen allowtransparency="true"></iframe>
+      </div>
+    </div>
+
+    <!-- Vendor -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="/js/mailchimp.js" type="text/javascript"></script>
+    <script src="/js/mailchimpSubmit.js" type="text/javascript"></script>
+    <script src="/js/jump.js" type="text/javascript"></script>
+    <script src="/js/animate.js" type="text/javascript"></script>
+    <script src="/js/vanilla-modal.js" type="text/javascript"></script>
+    <script src="/js/flickity.js" type="text/javascript"></script>
+
+    <script src="/js/main.js" type="text/javascript"></script>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.0'
+    drift.load('gfs5vtp5tux9')
+    ;</script>
+    <!-- End of Async Drift Code -->
+  </body>
+
+</html>

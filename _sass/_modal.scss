@@ -1,0 +1,135 @@
+.modal {
+  display: none;
+}
+
+.vanilla-modal .modal {
+  display: block;
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.2s, z-index 0s 0.2s;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vanilla-modal .modal > * {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.vanilla-modal .modal:before {
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.vanilla-modal.modal-visible .modal {
+  z-index: 99;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.modal-inner {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff;
+  padding: 35px 15px 40px;
+  width: 500px;
+  z-index: -1;
+  opacity: 1;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
+  border-top: 5px solid #9aca3e;
+  @media only screen and (max-width: 640px) {
+    padding: 24px 20px 36px;
+  }
+}
+.modal-inner.modal-video {
+  padding: 0px;
+  width: 900px; 
+  border:0px;
+  overflow: visible;
+}
+
+.modal-visible .modal-inner {
+  z-index: 100;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+
+.modal-title {
+  margin-top: 24px;
+  @media only screen and (max-width: 640px) {
+    font-size: 28px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+}
+
+a[rel="modal:close"] {
+  position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 16px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    color: rgba(47, 57, 69, 0.4);
+	display: none;
+}
+a[rel="modal:close"]:hover {
+  color: rgba(47,57,69,0.70);	
+}
+
+.modal-hider {
+  display: none;
+}
+
+.modal-inner .modal-content {
+    background: #303e49;
+    padding: 15px;
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 1px 3px 4px #a7a7a7;
+}
+.modal-inner .modal-content p {
+	color: #fff;
+}
+.modal-inner.modal-video .modal-content {
+  padding: 0px;
+  box-shadow: none;
+}
+.modal-inner.modal-video a[rel="modal:close"] {
+    top: -23px;
+    right: 0;
+    color: #fff;
+    font-size: 34px;
+    font-weight: normal;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
