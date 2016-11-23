@@ -109,37 +109,6 @@ customers:
   description: Large and small manufacturers trust Actvcontent's mobile technology
     to streamline their factory production processes. We are proud to be a part of
     their success.
-  testimonials:
-  - person: Charlie Freni
-    company: Central Hudson Gas & Electric
-    quote: Shorter lead times are important in picking a provider. Actvcontent's platform
-      decreases provider lead time by shortening assembly times and streamlining QA.
-    image: "/uploads/home__intro--raccoon.svg"
-  - person: Alex Dixon
-    company: Central Hudson Gas & Electric
-    quote: Shorter lead times are important in picking a provider. Actvcontent's platform
-      decreases provider lead time by shortening assembly times and streamlining QA.
-    image: "/uploads/home__intro--raccoon.svg"
-  - person: Robert Yuen
-    company: Central Hudson Gas & Electric
-    quote: Shorter lead times are important in picking a provider. Actvcontent's platform
-      decreases provider lead time by shortening assembly times and streamlining QA.
-    image: "/uploads/home__intro--raccoon.svg"
-  - person: Moe Amaya
-    company: Central Hudson Gas & Electric
-    quote: Shorter lead times are important in picking a provider. Actvcontent's platform
-      decreases provider lead time by shortening assembly times and streamlining QA.
-    image: "/uploads/home__intro--raccoon.svg"
-  - person: Vikas Murali
-    company: Central Hudson Gas & Electric
-    quote: Shorter lead times are important in picking a provider. Actvcontent's platform
-      decreases provider lead time by shortening assembly times and streamlining QA.
-    image: "/uploads/home__intro--raccoon.svg"
-  - person: Andrew Xue
-    company: Central Hudson Gas & Electric
-    quote: Shorter lead times are important in picking a provider. Actvcontent's platform
-      decreases provider lead time by shortening assembly times and streamlining QA.
-    image: "/uploads/home__intro--raccoon.svg"
 layout: index
 ---
 
