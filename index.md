@@ -103,12 +103,6 @@ action:
     Operators track production progress with the click of a button. Track purchase orders live, from sub-assembly all the way through final assembly and shipment. Identify quality issues and rework/repairs using our app.<br/>
     <a class="see-it-in-action nav-button" href="#demo-modal" rel="modal:open">Get Demo</a>
   video: "/uploads/temp.mp4"
-customers:
-  title: What Industry Experts Say
-  subtitle: Testimonials
-  description: Large and small manufacturers trust Actvcontent's mobile technology
-    to streamline their factory production processes. We are proud to be a part of
-    their success.
 layout: index
 ---
 
