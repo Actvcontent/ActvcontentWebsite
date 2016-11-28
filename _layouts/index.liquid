@@ -1,4 +1,4 @@
----
+video---
 layout: default
 ---
 
@@ -140,7 +140,10 @@ layout: default
   </div>
   
   <div class="index-action__video">
-    <video class="is-active js-action-video" autoplay="true" loop="true" muted="true" src="{{ page.action.video }}"></video>
+    <!--<video class="is-active js-action-video" autoplay="true" loop="true" muted="true" src="{{ page.action.video }}"></video>-->
+	<video class="is-active js-action-video" preload="yes" autoplay loop height="auto">
+            <source src="{{ page.action.video }}" type="video/mp4">
+	</video>
   </div>
 
 </section>
