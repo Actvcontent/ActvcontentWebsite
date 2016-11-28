@@ -96,6 +96,11 @@ p {
   border: 0;
   border-radius: 4px;
   transition: all 350ms ease-out;
+  -webkit-appearance: none; /*Safari/Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  -ms-appearance: none; /*IE*/
+  -o-appearance: none; /*Opera*/
+  appearance: none;
   &:hover {
     cursor: pointer;
     background: darken($green, 10%);
