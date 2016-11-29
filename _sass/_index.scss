@@ -409,7 +409,7 @@ p {
   video.showvideo-xs{
 	display: none;
 	@media only screen and (max-width: 400px) {
-		display: none;
+		display: block;
 	}
   }
 	
