@@ -400,6 +400,19 @@ p {
     opacity: 1;
     z-index: 1;
   }
+  video.hiddevideo-xs{
+	display: block;
+	@media only screen and (max-width: 400px) {
+		display: none;
+	}
+  }
+  video.showvideo-xs{
+	display: none;
+	@media only screen and (max-width: 400px) {
+		display: none;
+	}
+  }
+	
 }
 .action-content {
   position: relative;
