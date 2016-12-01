@@ -3,7 +3,7 @@ title: Actvcontent
 header_title: Real-Time Manufacturing Operations
 header_subtitle: Our application utilizes mobile technology to provide factory-wide
   visibility throughout the manufacturing process.
-header_image: "/uploads/header.jpg"
+header_image: "/uploads/HeaderNew.png"
 products:
   subtitle: Product
   sections:
