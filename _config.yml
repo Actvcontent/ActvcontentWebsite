@@ -12,5 +12,5 @@ email: sales@actvcontent.com
 description: Actvcontent makes software to enable real-time factory-wide visibility
   throughout the manufacturing process.
 baseurl: 
-url: actvcontentwebsite.siteleaf.net
+url: actvcontent.siteleaf.net
 markdown: kramdown
