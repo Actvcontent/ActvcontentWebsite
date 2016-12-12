@@ -1,0 +1,16 @@
+---
+title: Actvcontent
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: sales@actvcontent.com
+description: Actvcontent makes software to enable real-time factory-wide visibility
+  throughout the manufacturing process.
+baseurl: 
+url: actvcontent.siteleaf.net
+markdown: kramdown

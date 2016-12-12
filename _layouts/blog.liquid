@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<header class="header-blog" style="background-image:url('{{ page.header_image }}');">
+  <div class="row">
+    <div class="col-xs-24 text-center">
+      <h5>{{ page.header_subtitle }}</h5>
+      <h2>{{ page.header_title }}</h2>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="blog-index">
+  <div class="row">
+    <div class="col-xs-24 col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4">
+    {% for post in site.posts %}
+      {% if forloop.first == true %}
+        <h5 class="post-index__subtitle">Latest from the Blog</h5>
+        <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+
+        {% assign truncatedContent = '' %}
+        {% assign paragraphs = post.content | split:'</p>' %}
+        {% for paragraph in paragraphs limit:2 %}
+            {{ truncatedContent | append: paragraph }}
+            {{ truncatedContent | append: '</p>' }}
+        {% endfor %}
+
+        <div class="post-block">
+          <a href="{{ post.url }}">Read More</a>
+        </div>
+
+        <div class="blog-separator"></div>
+
+      {% else %}
+        <div class="blog-index__post">
+          <a href="{{ post.url }}"><h3 class="blog-secondary__title">{{ post.title }}</h3></a>
+          {% assign truncatedContent = '' %}
+          {% assign paragraphs = post.content | split:'</p>' %}
+          {% for paragraph in paragraphs limit:1 %}
+              {{ truncatedContent | append: paragraph }}
+              {{ truncatedContent | append: '</p>' }}
+          {% endfor %}
+
+          <div class="post-block post-block--small">
+            <a href="{{ post.url }}">Read More</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+
+
+
+</main>
